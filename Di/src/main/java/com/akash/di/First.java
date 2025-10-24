@@ -1,6 +1,7 @@
 package com.akash.di;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 public class First {
     
     @Autowired//Field injection!
+    @Qualifier("laptop")
     Job laptop;
 
     public void build(){
