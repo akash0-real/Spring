@@ -1,13 +1,14 @@
 package com.akash.di;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
 public class First {
     
     @Autowired//Field injection!
-    Laptop laptop;
+    Job laptop;
 
     public void build(){
         laptop.complie();
@@ -16,20 +17,24 @@ public class First {
 }
 
 @Component
-class Laptop{
+class Laptop implements Job{
+    @Override
     public void complie(){
         System.out.println("compliing 404 errors!!");
     }
 }
 
-interface Student{
-    void name();
+interface Job{
+    void complie();
 }
 
+
+
 @Component
-class Art implements Student{
+@Primary
+class Science implements Job{
     @Override
-    public void name(){
-        System.out.println("My name is akash!!");
+    public void complie(){
+        System.out.println("my name is bhat!!");
     }
 }
