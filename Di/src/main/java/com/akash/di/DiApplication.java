@@ -22,6 +22,12 @@ public class DiApplication {
 		Third third = new Third(second);
 		third.said();
 
+		//Di using setters!
+		Set set = new Set();
+		setTo to = new setTo();
+		to.setSetTo(set);
+		to.ok();
+
 
 	}
 
