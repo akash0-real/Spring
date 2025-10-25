@@ -1,4 +1,4 @@
-package com.akash.di;
+package com.akash.Di;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,4 +1,4 @@
-package com.akash.di;
+package com.akash.Di;
 
 public class Second {
     public void say(){
