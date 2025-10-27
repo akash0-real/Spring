@@ -1,4 +1,4 @@
-package com.akash;
+package com.akash.controller;
 
 import java.util.Objects;
 
