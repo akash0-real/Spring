@@ -10,34 +10,31 @@ import java.util.Objects;
 public class Swe {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // auto-increment ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String skills;
 
-    // Default constructor (required by JPA)
     public Swe() {}
 
-    // Parameterized constructor
     public Swe(int id, String name, String skills) {
         this.id = id;
         this.name = name;
         this.skills = skills;
     }
 
-    // Another constructor (useful when creating new records)
     public Swe(String name, String skills) {
         this.name = name;
         this.skills = skills;
     }
 
-    // Getters
+
     public int getId() {
         return id;
     }
 
 
-    // Setters
+
     public void setId(int id) {
         this.id = id;
     }
